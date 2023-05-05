@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.css">
+        <title>Philips HUE command center</title>
+        <script src="Device.js" defer></script>
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+
+        <!-- NavBar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Philips HUE command center</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                    aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        
+                <!-- Form -->
+                
+        <form class="container">
+            <h3>Añadir nuevo dispositivo al hogar</h3>
+
+            <label>Habitación</label>
+            <input type="text" class="form-control" id="inputRoom" placeholder="En cuál habitación instalaras el artefacto?">
+            <label>Nombre</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Ingrese nombre">
+            <label>Color</label>
+            <input type="text" class="form-control" id="inputColor" placeholder="Pone 'RGB' en caso de que correspona">
+            <label>Socket</label>
+            <input type="text" class="form-control" id="inputSocket" placeholder="Dejalo vacio si no corresponde para el producto">
+            <label>Potencia</label>
+            <input type="text" class="form-control" id="inputPower" placeholder="Dejalo vacio si no contas con el dato">
+            <div class="container-form">
+                
+                <button type="submit" class="btn btn-secondary">Añadir</button>
+            </div>
+        </form>
+
+        <div>
+            <h3>Dispositivos conectados</h3>
+            <div class="container-fluid">
+                <div id="connected-devices-list" class="row"></div>
+            </div>
+        </div>
+            
+    </body>
+        
+</html>
